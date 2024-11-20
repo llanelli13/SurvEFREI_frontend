@@ -1,44 +1,76 @@
 .profile-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin-bottom: 20px;
-  }
-  
-  .profile-avatar {
-    flex-shrink: 0;
-  }
-  
-  .avatar-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-  }
-  
-  .profile-details {
-    flex-grow: 1;
-    margin-left: 20px;
-  }
-  
-  .profile-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .action-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .action-button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligne les boutons à droite */
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  flex-shrink: 0; /* Évite que l'image rétrécisse */
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.profile-details {
+  flex-grow: 1; /* Prend tout l’espace disponible entre l’image et les boutons */
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column; /* Place le statut sous le nom */
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0; /* Supprime toute marge autour du nom */
+  color: black;
+}
+
+.profile-status {
+  font-size: 14px;
+  color: #6c757d; /* Couleur grise pour le statut */
+  margin: 2px 0 0; /* Réduit l'espace au-dessus du statut */
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center; /* Aligne les boutons horizontalement */
+  gap: 5px; /* Ajoute un espace entre les boutons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}

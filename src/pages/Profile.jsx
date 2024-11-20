@@ -1,6 +1,6 @@
 import './styles/ProfilePage.css';
-import ProfileHeader from './ProfileHeader';
-import ProfileContent from './ProfileContent';
+import ProfileHeader from '../components/ProfileHeader'
+import ProfileContent from '../components/ProfileContent'
 
 const ProfilePage = () => {
   return (

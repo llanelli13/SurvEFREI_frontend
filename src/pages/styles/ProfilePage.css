@@ -1,10 +1,16 @@
 .profile-page {
-    display: flex;
-  }
-  
-  .profile-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  background-color: #f8f9fa; /* Fond clair */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  border-radius: 10px;
+}
+
+.profile-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  height: 100%; /* Étendre sur toute la hauteur disponible */
+  overflow: auto; /* Permet le défilement si contenu trop grand */
+  border-radius: 10px;
+}
