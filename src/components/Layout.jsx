@@ -1,10 +1,18 @@
-import Sidebar from "./Sidebar";
+import Sidebar from './Sidebar';
+import Header from './Header';
+import { Outlet } from 'react-router-dom';
+import './styles/Layout.css';
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
+    <div className="layout-container">
       <Sidebar />
-      <main style={{ flex: 1, padding: "20px" }}>{children}</main>
+      <div className="main-content">
+        <Header />
+        <div className="outlet-container">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };

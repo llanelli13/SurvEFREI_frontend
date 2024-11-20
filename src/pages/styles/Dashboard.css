@@ -1,0 +1,20 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;  /* Cela place les éléments verticalement (les cartes puis la table) */
+    padding: 20px;
+  }
+  
+  .dashboard-container > * {
+    margin-bottom: 30px;  /* Espace entre les éléments */
+  }
+  
+  /* Optionnel : si tu veux limiter la taille des cartes */
+  .stats-cards {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
