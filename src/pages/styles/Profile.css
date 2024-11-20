@@ -1,0 +1,111 @@
+/* Conteneur principal */
+/* Conteneur principal */
+.profile-container {
+    margin: 0; /* Retire les marges */
+    background-color: #fff;
+    height: 100vh;
+    width: 90%; /* Prend toute la largeur */
+    border-radius: 0; /* Supprime le rayon de bordure pour coller aux bords */
+    overflow: hidden;
+    box-shadow: none; /* Supprime l'ombre */
+    color: #000; /* Par défaut, tout le texte hérite du noir */
+    display: flex;
+    flex-direction: column; /* Empile le contenu verticalement */
+    border: 1px solid black
+  }
+  
+  
+  /* Header avec une image */
+.profile-header {
+    height: 150px;
+    background-image: url('https://imgs.search.brave.com/yLBKMS5nAUqh2HQqNRiNnBwKfGc_sCdJLVGDWCBrY6c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29kZXVyLmNvbS90/dXRvL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzEyL2JnLWlt/YWdlLWNoYXQuanBn');
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Étendre sur toute la largeur */
+  }
+  
+  
+  /* Contenu principal */
+/* Contenu principal */
+.profile-content {
+    display: flex;
+    padding: 20px;
+    flex: 1; /* S'adapte à l'espace restant */
+    overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+    width: 100%; /* Utilise toute la largeur */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur */
+  }
+  
+  
+  /* Section de l'avatar */
+  .avatar-section {
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+  }
+  
+  .name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Noir */
+  }
+  
+  .role {
+    font-size: 14px;
+    color: #000; /* Noir */
+  }
+  
+  /* Section des informations */
+  .info-section {
+    flex: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff; /* Garder les boutons blancs */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Titre des sections */
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Noir */
+  }
+  
+  /* Paramètres de la plateforme */
+  .settings {
+    margin-bottom: 20px;
+  }
+  
+  .setting-item {
+    display: block;
+    margin-bottom: 10px;
+    color: #000; /* Noir */
+  }
+  
+  /* Infos utilisateur */
+  .info {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000; /* Noir */
+  }
+  

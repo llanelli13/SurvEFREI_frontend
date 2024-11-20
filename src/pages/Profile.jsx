@@ -1,5 +1,16 @@
-const Profile = () => {
-  return <h1>Profil</h1>;
+import './styles/ProfilePage.css';
+import ProfileHeader from './ProfileHeader';
+import ProfileContent from './ProfileContent';
+
+const ProfilePage = () => {
+  return (
+    <div className="profile-page">
+      <div className="profile-main">
+        <ProfileHeader />
+        <ProfileContent />
+      </div>
+    </div>
+  );
 };
 
-export default Profile;
+export default ProfilePage;
