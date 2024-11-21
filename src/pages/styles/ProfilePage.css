@@ -1,7 +1,7 @@
 .profile-page {
   display: flex;
   background-color: #f8f9fa; /* Fond clair */
-  height: 100vh; /* Prend toute la hauteur de l'écran */
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -13,4 +13,5 @@
   height: 100%; /* Étendre sur toute la hauteur disponible */
   overflow: auto; /* Permet le défilement si contenu trop grand */
   border-radius: 10px;
+  background-color: #242424;
 }

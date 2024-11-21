@@ -3,25 +3,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff; /* Fond blanc du bloc principal */
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
-  margin: -50px auto 20px; /* Pour chevaucher l'image */
-  width: 80%; /* Largeur ajustée */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: -50px auto 10px;
+  width: 90%;
+  height: 100%;
+}
+
+.profile-details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 80%;
+  margin-bottom: 10px;
 }
 
 .profile-details {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
+  flex-wrap: wrap; /* Les éléments passent à la ligne si l'espace est trop petit */
+  margin: auto 20px;
   width: 100%;
 }
 
-.profile-details-block {
-  flex: 1;
+.profile-details-block { 
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  flex: 1 1 30%; /* Prend 30% de la largeur disponible et peut se rétrécir */
+  min-width: 250px; /* Largeur minimale pour éviter trop de compression */
+  height: 100%;
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+  .profile-details {
+    flex-direction: column; /* Les blocs se mettent en colonne sur les petits écrans */
+  }
+  
+  .profile-details-block {
+    flex: 1 1 100%; /* Chaque bloc prend 100% de la largeur */
+    min-width: 100%; /* S'assure que chaque bloc occupe toute la largeur disponible */
+  }
 }

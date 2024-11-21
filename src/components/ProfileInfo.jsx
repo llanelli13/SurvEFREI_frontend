@@ -5,7 +5,7 @@ const ProfileInfo = () => {
     <div className="profile-info">
       <div className="profile-avatar">
         <img
-          src="https://via.placeholder.com/100" // Remplacez par l'URL de l'image
+          src="https://imgs.search.brave.com/bBck5n4xADEvFApavWIC6GxAni29mg_I6_KwCb__wpU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMzEzNS8zMTM1/NzY4LnBuZw"
           alt="Avatar"
           className="avatar-image"
         />
