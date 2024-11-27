@@ -1,0 +1,20 @@
+/* Header.css */
+
+.header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.icons-container span {
+  margin-left: 20px;
+  cursor: pointer;
+}

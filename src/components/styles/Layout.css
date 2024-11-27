@@ -1,0 +1,19 @@
+/* Layout.css */
+
+.layout-container {
+  display: flex; /* Affiche les enfants en ligne */
+  flex-direction: row; /* Assure l'affichage en ligne */
+  min-height: 100vh; /* Pour que le conteneur prenne toute la hauteur */
+}
+
+.main-content {
+  flex: 1; /* Occupe tout l'espace restant */
+  display: flex;
+  flex-direction: column; /* Affichage du contenu en colonne */
+  margin-left: 250px; /* Pour donner de la place à la sidebar */
+}
+
+.outlet-container {
+  padding: 20px;
+  flex-grow: 1;
+}

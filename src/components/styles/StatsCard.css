@@ -1,0 +1,30 @@
+/* StatsCards.css */
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  color: #000; /* Ajouté pour que le texte soit en noir */
+}
+
+.stat-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000; /* Couleur des titres en noir */
+}
+
+.stat-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000; /* Couleur du texte en noir */
+}
