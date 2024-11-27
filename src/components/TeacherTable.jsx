@@ -3,12 +3,12 @@ import "./styles/TeacherTable.css";
 
 const TeacherTable = () => {
   const teachers = [
-    { name: "John Michael", subject: "Manager", status: "ONLINE", date: "23/04/18" },
-    { name: "Alexa Liras", subject: "Programmer", status: "OFFLINE", date: "11/01/19" },
-    { name: "Laurent Perrier", subject: "Executive", status: "ONLINE", date: "19/09/17" },
-    { name: "Michael Levi", subject: "Programmer", status: "ONLINE", date: "24/12/08" },
-    { name: "Richard Gran", subject: "Manager", status: "OFFLINE", date: "04/10/21" },
-    { name: "Miriam Eric", subject: "Programmer", status: "OFFLINE", date: "14/09/20" },
+    { name: "John Michael", subject: "Manager", status: "DONE", date: "23/04/18" },
+    { name: "Alexa Liras", subject: "Programmer", status: "TODO", date: "11/01/19" },
+    { name: "Laurent Perrier", subject: "Executive", status: "DONE", date: "19/09/17" },
+    { name: "Michael Levi", subject: "Programmer", status: "DONE", date: "24/12/08" },
+    { name: "Richard Gran", subject: "Manager", status: "TODO", date: "04/10/21" },
+    { name: "Miriam Eric", subject: "Programmer", status: "TODO", date: "14/09/20" },
   ];
 
   return (
