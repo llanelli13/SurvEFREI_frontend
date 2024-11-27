@@ -1,5 +1,4 @@
 // Dashboard.jsx
-import React from "react";
 import StatsCards from "../components/StatsCard";  // Importation des StatsCards
 import TeacherTable from "../components/TeacherTable";  // Importation de la table des enseignants
 import "./styles/Dashboard.css";  // Importation du CSS pour le Dashboard
