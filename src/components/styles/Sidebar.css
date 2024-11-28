@@ -81,3 +81,29 @@
     padding: 20px;
   }
   
+
+  .language-switcher-container {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .language-switcher {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .language-switcher button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #0056b3;
+  }

@@ -1,6 +1,11 @@
 import './styles/ProfileInfo.css';
+import { useTranslation } from 'react-i18next';
 
 const ProfileInfo = ({ selected, setSelected }) => {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="profile-info">
       <div className="profile-avatar">
@@ -15,7 +20,7 @@ const ProfileInfo = ({ selected, setSelected }) => {
         <p className="profile-status">UserStatus</p>
       </div>
       <div className="profile-actions">
-        {['App', 'Surveys', 'Settings'].map((label, index) => (
+        {['Réglage', 'Notification'].map((label, index) => (
             <button
               key={index}
               className={`profile-button ${selected === index ? 'selected' : ''}`}
@@ -23,7 +28,7 @@ const ProfileInfo = ({ selected, setSelected }) => {
                 setSelected(index)
               }}
             >
-              {label}
+              {t(label.toLowerCase(index))}
             </button>
           ))}
       </div>

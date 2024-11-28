@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
-import './styles/Sidebar.css'
+import LanguageSwitcher from './LanguageSwitcher';  // Import du composant LanguageSwitcher
+import './styles/Sidebar.css';
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -12,35 +17,40 @@ const Sidebar = () => {
           <li>
             <NavLink to="/home/dashboard" activeClassName="active-link">
               <i className="icon">📊</i>
-              Dashboard
+                {t('dashboard')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/home/profile" activeClassName="active-link">
               <i className="icon">👤</i>
-              Profile
+              {t('profile')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/home/surveys" activeClassName="active-link">
               <i className="icon">📋</i>
-              Surveys
+              {t('surveys')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/home/signin" activeClassName="active-link">
               <i className="icon">🔐</i>
-              Sign In
+              {t("sign in")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/home/signup" activeClassName="active-link">
               <i className="icon">📝</i>
-              Sign Up
+              {t('sign up')}
             </NavLink>
           </li>
         </ul>
       </nav>
+      
+      {/* Ajouter le LanguageSwitcher en bas de la Sidebar */}
+      <div className="language-switcher-container">
+        <LanguageSwitcher />
+      </div>
     </div>
   );
 };

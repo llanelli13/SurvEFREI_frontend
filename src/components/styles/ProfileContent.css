@@ -23,19 +23,6 @@
   width: 100%;
 }
 
-.profile-details-block { 
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: black;
-  text-align: center;
-  flex: 1 1 30%; /* Prend 30% de la largeur disponible et peut se rétrécir */
-  min-width: 250px; /* Largeur minimale pour éviter trop de compression */
-  height: 100%;
-}
-
 h1 {
   color: black;
 }
