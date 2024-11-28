@@ -1,28 +1,55 @@
-// StatsCards.jsx
-import React from "react";
-import "./styles/StatsCard.css";  // Assurez-vous d'avoir un fichier CSS pour styliser les cartes
+import React from 'react';
+import './styles/StatsCard.css';
 
 const StatsCards = () => {
   return (
-    <div className="stats-cards">
-      <div className="stat-card">
-        <h2>New Surveys</h2>
-        <p>281</p>
+    <div className="stats-container">
+      <div className="stats-row">
+        <div className="stat-card">
+          <div className="stat-header">
+            <div className="stat-icon bg-blue">
+              📊
+            </div>
+            <span className="stat-title">Number of Subjects</span>
+          </div>
+          <div className="stat-value">281</div>
+        </div>
+        
+        <div className="stat-card">
+          <div className="stat-header">
+            <div className="stat-icon bg-orange">
+              👥
+            </div>
+            <span className="stat-title">Number of Students</span>
+          </div>
+          <div className="stat-value">2,300</div>
+        </div>
+        
+        <div className="stat-card">
+          <div className="stat-header">
+            <div className="stat-icon bg-green">
+              ✅
+            </div>
+            <span className="stat-title">Answered Surveys</span>
+          </div>
+          <div className="stat-value">34k</div>
+        </div>
       </div>
-      <div className="stat-card">
-        <h2>Not Answered Surveys</h2>
-        <p>2,300</p>
-      </div>
-      <div className="stat-card">
-        <h2>Answered Surveys</h2>
-        <p>34k</p>
-      </div>
-      <div className="stat-card">
-        <h2>Surveys Requiring Answer</h2>
-        <p>+91</p>
+
+      <div className="stats-row">
+        <div className="stat-card">
+          <div className="stat-header">
+            <div className="stat-icon bg-red">
+              ❗
+            </div>
+            <span className="stat-title">Surveys Requiring Answer</span>
+          </div>
+          <div className="stat-value">+91</div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default StatsCards;
+
