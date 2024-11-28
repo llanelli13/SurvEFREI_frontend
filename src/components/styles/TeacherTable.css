@@ -13,7 +13,7 @@
 .teacher-table th, .teacher-table td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #ddd;
+  border: 1px solid black;
 }
 
 .teacher-table th {
@@ -22,6 +22,7 @@
 
 .teacher-table td {
   text-align: center;
+  background-color: white;
 }
 
 .teacher-table .done {
