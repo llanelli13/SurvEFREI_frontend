@@ -1,8 +1,7 @@
-/* StatsCards.css */
 .stats-cards {
-  display: grid; /* Utilisation de Grid pour contrôler la disposition */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivité avec largeur minimale */
-  gap: 20px; /* Espacement entre les cartes */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Gestion dynamique */
+  gap: 20px;
   margin-bottom: 30px;
 }
 
@@ -11,6 +10,21 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: right; /* Alignement à droite */
   color: #000;
+  height: 120px; /* Fixe la hauteur des cartes */
+}
+
+.stat-card h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000;
+  margin-right: 10px; /* Marge à droite */
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-right: 10px; /* Marge à droite */
 }
