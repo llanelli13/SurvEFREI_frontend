@@ -6,6 +6,11 @@
     "surveys": "Enquêtes",
     "profile": "Profil",
     "sign up": "S'inscrire",
-    "sign in": "Se connecter"
+    "sign in": "Se connecter",
+    "teacher": "Teacher",
+    "student": "Student",
+    "admin": "Admin",
+    "name": "Name",
+    "lastname": "Lastname"
   }
   
