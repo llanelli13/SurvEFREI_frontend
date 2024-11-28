@@ -26,8 +26,8 @@ const Surveys = () => {
       <table className="professor-table">
         <thead>
           <tr>
-            <th>Teacher</th>
-            <th>Subject</th>
+            <th>Professeur</th>
+            <th>Matière</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -35,11 +35,11 @@ const Surveys = () => {
           {professors.map((prof) => (
             <tr key={prof.id}>
               <td>{prof.name}</td>
-              <td>Developer</td> {/* Vous pouvez personnaliser le sujet ici */}
+              <td>Développeur</td> {/* Personnaliser le sujet */}
               <td>
-                <Link to={`/survey/${prof.id}`} className="answer-link">
-                  Répondre
-                </Link>
+              <Link to={`/home/survey/${prof.id}`} className="answer-link">
+                Répondre
+              </Link>
               </td>
             </tr>
           ))}
