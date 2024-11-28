@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './styles/ProfileInfo.css';
 
 const ProfileInfo = () => {
+  const [selected, setSelected] = useState(null);
+
   return (
     <div className="profile-info">
       <div className="profile-avatar">
@@ -12,12 +15,18 @@ const ProfileInfo = () => {
       </div>
       <div className="profile-details">
         <h2 className="profile-name">Prénom Nom</h2>
-        <p className="profile-status">Student / Admin / Teacher</p>
+        <p className="profile-status">UserStatus</p>
       </div>
       <div className="profile-actions">
-        <button className="btn btn-primary">App</button>
-        <button className="btn btn-primary">Surveys</button>
-        <button className="btn btn-secondary">Settings</button>
+        {['App', 'Surveys', 'Settings'].map((label, index) => (
+            <button
+              key={index}
+              className={`profile-button ${selected === index ? 'selected' : ''}`}
+              onClick={() => setSelected(index)}
+            >
+              {label}
+            </button>
+          ))}
       </div>
     </div>
   );
