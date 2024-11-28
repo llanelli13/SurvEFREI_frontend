@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './styles/ProfileInfo.css';
 
-const ProfileInfo = () => {
-  const [selected, setSelected] = useState(null);
-
+const ProfileInfo = ({ selected, setSelected }) => {
   return (
     <div className="profile-info">
       <div className="profile-avatar">
@@ -22,7 +19,9 @@ const ProfileInfo = () => {
             <button
               key={index}
               className={`profile-button ${selected === index ? 'selected' : ''}`}
-              onClick={() => setSelected(index)}
+              onClick={() => {
+                setSelected(index)
+              }}
             >
               {label}
             </button>

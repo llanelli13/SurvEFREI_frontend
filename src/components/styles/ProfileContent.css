@@ -6,7 +6,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: -50px auto 10px;
+  margin: -60px auto 10px;
   width: 90%;
   height: 100%;
 }
@@ -16,12 +16,10 @@
   flex-direction: row;
   gap: 20px;
   height: 80%;
-  margin-bottom: 10px;
 }
 
 .profile-details {
   flex-wrap: wrap; /* Les éléments passent à la ligne si l'espace est trop petit */
-  margin: auto 20px;
   width: 100%;
 }
 
@@ -36,6 +34,10 @@
   flex: 1 1 30%; /* Prend 30% de la largeur disponible et peut se rétrécir */
   min-width: 250px; /* Largeur minimale pour éviter trop de compression */
   height: 100%;
+}
+
+h1 {
+  color: black;
 }
 
 /* Media Query pour les petits écrans */
